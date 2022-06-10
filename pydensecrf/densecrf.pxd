@@ -67,6 +67,7 @@ cdef extern from "densecrf/include/densecrf.h":
         #double gradient( int n_iterations, const ObjectiveFunction & objective, c_VectorXf * unary_grad, c_VectorXf * lbl_cmp_grad, c_VectorXf * kernel_grad=NULL ) const;
 
         double klDivergence(const c_MatrixXf &Q) const
+        c_VectorXs currentMap( const c_MatrixXf & Q ) const;
 
         #c_VectorXf unaryParameters() const;
         #void setUnaryParameters( const c_VectorXf & v );
