@@ -25,7 +25,7 @@ setup(
     long_description="See the README.md at http://github.com/lucasb-eyer/pydensecrf",
     author="Lucas Beyer",
     author_email="lucasb.eyer.be@gmail.com",
-    url="http://github.com/lucasb-eyer/pydensecrf",
+    url="http://github.com/LoganZz/pydensecrf",
     ext_modules=ext_modules,
     packages=["pydensecrf"],
     setup_requires=['cython>=0.22'],
