@@ -99,6 +99,9 @@ cdef class DenseCRF:
 
     def klDivergence(self, MatrixXf Q):
         return self._this.klDivergence(Q.m)
+    
+    def currentMap(self, MatrixXf Q):
+        return self._this.currentMap(Q.m)
 
 
 cdef class DenseCRF2D(DenseCRF):
